@@ -1,0 +1,11 @@
+#安装yarn
+npm install -g  yarn
+
+#设置yarn 淘宝镜像
+yarn config get registry
+
+#下载项目依赖
+yarn
+
+#运行项目
+yarn start

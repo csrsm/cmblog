@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url(./asset/image/cm.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;/*-1 可以当背景*/
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-left{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 40%;
+  height: 100%;
+}
+
+.App-left-name{
+  position: fixed;
+  top: 50%;
+  left: 17.5%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.App-left-github{
+  position: fixed;
+  top: 60%;
+  left: 19%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.App-left-oneword{
+  position: fixed;
+  width: 350px;
+  height: auto;
+  left: 5%;
+  bottom: 10px;
+}
+
+.App-font{
+  font-size: 20px;
+  font-family: 'Microsoft Yahe';
+}
+
+.App-wrap{
+  position: fixed;
+  left: 10%;
+  top: 50px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+ }
+.App-circle{
+  height: 100%;
+  box-sizing: border-box;
+  border: 0px solid white;
+  border-radius: 50%;
+  background-image: url(./asset/image/lina.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.App-right{
+  position: relative;
+  left: 50%;
+  width: 60%;
+  height: 100%;
+  text-align: left;
+}
+
+.App-blog{
+  position: absolute;
+  margin-top: 10%;
+}
+
+
