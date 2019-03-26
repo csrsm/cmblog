@@ -40,9 +40,9 @@ class App extends Component {
           </div>
 
           <div className="App-left">
-              <div className="App-wrap">
+              
                 <div className="App-circle">  
-                </div>
+              
               </div>
               <div className="App-left-name">
                 <span className="App-font">{this.state.name}</span>

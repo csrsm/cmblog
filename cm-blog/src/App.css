@@ -1,5 +1,8 @@
+
 .App {
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 .App-logo {
@@ -40,32 +43,24 @@
   position: absolute;
   left: 0px;
   bottom: 0px;
-  width: 40%;
+  width: 35%;
   height: 100%;
 }
 
 .App-left-name{
-  position: fixed;
-  top: 50%;
-  left: 17.5%;
-  margin-top: -50px;
-  margin-left: -50px;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .App-left-github{
-  position: fixed;
-  top: 60%;
-  left: 19%;
-  margin-top: -50px;
-  margin-left: -50px;
+  margin: auto;
+ margin-top: 10px;
+
 }
 
 .App-left-oneword{
-  position: fixed;
-  width: 350px;
-  height: auto;
-  left: 5%;
-  bottom: 10px;
+  margin: auto;
+  margin-top: 40%;
 }
 
 .App-font{
@@ -73,16 +68,12 @@
   font-family: 'Microsoft Yahe';
 }
 
-.App-wrap{
-  position: fixed;
-  left: 10%;
-  top: 50px;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
- }
+
 .App-circle{
-  height: 100%;
+  margin: auto;
+  margin-top: 80px;
+  height: 200px;
+  width: 200px;
   box-sizing: border-box;
   border: 0px solid white;
   border-radius: 50%;
@@ -92,16 +83,11 @@
 }
 
 .App-right{
-  position: relative;
-  left: 50%;
-  width: 60%;
-  height: 100%;
-  text-align: left;
+  width: 65%;
+  margin-left: 30%;
+  margin-top: 10%;
+  float: right;
 }
 
-.App-blog{
-  position: absolute;
-  margin-top: 10%;
-}
 
 
