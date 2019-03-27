@@ -6989,6 +6989,11 @@ moment@2.x, moment@^2.22.2:
   resolved "http://registry.npm.taobao.org/moment/download/moment-2.23.0.tgz#759ea491ac97d54bac5ad776996e2a58cc1bc225"
   integrity sha1-dZ6kkayX1UusWtd2mW4qWMwbwiU=
 
+moment@^2.24.0:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+  integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/move-concurrently/download/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -9184,6 +9189,11 @@ react-slick@~0.23.2:
     lodash.debounce "^4.0.8"
     prettier "^1.14.3"
     resize-observer-polyfill "^1.5.0"
+
+react-time@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/react-time/-/react-time-4.3.0.tgz#b37507b8b5278f03a8e7f2bfe70911824a8991dd"
+  integrity sha1-s3UHuLUnjwOo5/K/5wkRgkqJkd0=
 
 react@^16.6.1:
   version "16.6.3"

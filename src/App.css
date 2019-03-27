@@ -85,9 +85,21 @@
 .App-right{
   width: 65%;
   margin-left: 30%;
-  margin-top: 10%;
+  margin-top: 7%;
   float: right;
 }
 
+.card{
+  background-color: grey;
+  align-content: center;
+  width: 70%;
+  height: 130px;
+  filter:alpha(Opacity=60);
+  -moz-opacity:0.6;
+  opacity: 0.6
+}
 
+.item-title{
+  height: 30px;
+}
 
