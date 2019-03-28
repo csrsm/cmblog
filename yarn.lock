@@ -9123,6 +9123,13 @@ react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   resolved "http://registry.npm.taobao.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha1-TxonOv38jzSIqMUWv9p4+HI1I2I=
 
+react-particles-js@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/react-particles-js/-/react-particles-js-2.5.1.tgz#337ea9f9220bb33ca4b5ed3efa766efbac74011f"
+  integrity sha512-bNHVtYrNEqOQchcmkOiEhRjD+q8RUHQ8/ZV1KzqKrgsdDOlAJBIAW1E61DSGt33tqQxnN6JRI3E6M5TWEIdfXA==
+  dependencies:
+    lodash "^4.17.11"
+
 react-scripts@2.1.1:
   version "2.1.1"
   resolved "http://registry.npm.taobao.org/react-scripts/download/react-scripts-2.1.1.tgz#c2959a756b0b61d3090adece0d7aedd324dff8a5"

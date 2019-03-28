@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import getWord from './util/getWord.js';
 import BlogList from './component/blogList.js';
+import Particles from 'reactparticles.js';
+
 
 //博客列表
 const blogList = [
@@ -19,7 +21,7 @@ class App extends Component {
     super(props);
         this.state = {
           menuText:"",
-          textFrom:"",
+          textFrom:"",  
           name:"小二 上酒"
         };
   }
@@ -27,12 +29,15 @@ class App extends Component {
 
   render() {
     return (
+
+      
+
       <div className="App">
           <header className="App-header">
           </header>
           
           <div className="App-background">   
-          ]
+             <Particles id="particles" config="test-particles.json"/>
           </div>
 
           <div className="App-left">

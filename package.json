@@ -9,8 +9,10 @@
     "moment": "^2.24.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
+    "react-particles-js": "^2.5.1",
     "react-scripts": "2.1.1",
     "react-time": "^4.3.0",
+    "reactparticles.js": "^1.1.6",
     "style-loader": "^0.23.1"
   },
   "scripts": {
