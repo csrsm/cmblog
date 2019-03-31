@@ -3,23 +3,16 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import Home from './component/home.js'
+import Home from './component/home.js';
+import { RenderRoute } from './util/RenderRoute';
+import { RouteConfig } from './routers/router'
 
-
-class App extends Component {
-
- 
-
-  render() {
-    return (
-      <Router>
-      <div>  
-        <Route exact path="/" component={Home}/>
-      </div>
+function App() {
+  return (
+    <Router>
+      {RenderRoute(RouteConfig)}
     </Router>
-    );
-  }
-
+  )
 }
 
 export default App;

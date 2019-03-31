@@ -54,7 +54,8 @@ class Home extends Component {
           <div className="App-right">
             <div className="App-blog">
                   <BlogList blogList={blogList}/>
-            </div>  
+                  {this.props.children}
+            </div>   
           </div>       
       </div>
         )

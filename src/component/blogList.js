@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from  'react-router-dom';
 import { Card } from 'antd';
 import { Icon } from 'antd';
 import '../App.css';
+
 
 function BlogList (props) {
 
@@ -19,7 +21,8 @@ function BlogList (props) {
             </span> 
         </div>
         <p>
-            { blogList.content }
+            {/* { blogList.content } */}
+            <Link to="/home/detail">阅读全文</Link>
         </p>
     </Card>
   );

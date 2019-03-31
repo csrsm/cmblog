@@ -24,10 +24,11 @@ class Detail extends Component {
                     }}
                 />
             </div>
+            
         )
     }
 
-    componentWillMount() {
+    componentWillMount() {  
         //marked相关配置
         marked.setOptions({
             renderer: new marked.Renderer(),
@@ -46,3 +47,4 @@ class Detail extends Component {
     }
  
 }
+export default Detail;
