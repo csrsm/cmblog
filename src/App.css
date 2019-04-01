@@ -54,7 +54,7 @@
 
 .App-left-github{
   margin: auto;
- margin-top: 10px;
+ margin-top: 20px;
 
 }
 
@@ -94,9 +94,9 @@
   align-content: center;
   width: 70%;
   height: 130px;
-  filter:alpha(Opacity=60);
-  -moz-opacity:0.6;
-  opacity: 0.6
+  filter:alpha(Opacity=80);
+  -moz-opacity:0.8;
+  opacity: 0.8;
 }
 
 .item-title{

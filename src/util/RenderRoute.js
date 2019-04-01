@@ -1,9 +1,11 @@
 import React from 'react'
-import { Redirect, Route, RouteProps, SwitchProps } from 'react-router'
+import { Redirect, Route } from 'react-router'
 import { Switch } from 'react-router'
-import  RouterConfig  from '../routers/router.js'
 
 function RenderRoute(RouterConfig) {
+
+    debugger;
+
     if (!RouterConfig || RouterConfig.length === 0) {
         return null
     }
@@ -17,7 +19,7 @@ function RenderRoute(RouterConfig) {
                     redirect,
                     exact,
                     strict,
-                    routes: childRoutesConfig,
+                    RouterConfig: childRoutesConfig,
                     component: Comp,
                 } = route
 

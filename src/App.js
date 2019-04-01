@@ -1,9 +1,5 @@
-import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route
-} from 'react-router-dom';
-import Home from './component/home.js';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { RenderRoute } from './util/RenderRoute';
 import { RouteConfig } from './routers/router'
 
