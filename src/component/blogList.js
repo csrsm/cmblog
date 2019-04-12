@@ -23,6 +23,7 @@ function BlogList (props) {
         <p>
             {/* { blogList.content } */}
             <Link to="/home/detail">阅读全文</Link>
+
         </p>
     </Card>
   );

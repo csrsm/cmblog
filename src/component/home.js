@@ -4,15 +4,16 @@ import getWord from '../util/getWord.js';
 import BlogList from './blogList.js';
 import Particles from 'reactparticles.js';
 import '../App.css';
+import Axios from 'axios';
 
 //博客列表
-const blogList = [
-    {id: 1, title: '标题1', content: 'Welcome to learning React!',date:'2019-03-27'},
-    {id: 2, title: '标题2', content: 'You can install React from npm.',date:'2019-03-27'},
-    {id: 3, title: '标题3', content: 'You can install React from npm.',date:'2019-03-27'},
-    {id: 4, title: '标题4', content: 'You can install React from npm.',date:'2019-03-27'},
-    {id: 5, title: '标题5', content: 'You can install React from npm.',date:'2019-03-27'}
-  ];
+// const blogList = [
+//     {id: 1, title: '标题1', content: 'Welcome to learning React!',date:'2019-03-27'},
+//     {id: 2, title: '标题2', content: 'You can install React from npm.',date:'2019-03-27'},
+//     {id: 3, title: '标题3', content: 'You can install React from npm.',date:'2019-03-27'},
+//     {id: 4, title: '标题4', content: 'You can install React from npm.',date:'2019-03-27'},
+//     {id: 5, title: '标题5', content: 'You can install React from npm.',date:'2019-03-27'}
+//   ];
 
 class Home extends Component {
 
@@ -21,7 +22,8 @@ class Home extends Component {
             this.state = {
               menuText:"",
               textFrom:"",  
-              name:"小二 上酒"
+              name:"小二 上酒",
+              blogList:[]
             };
       }
     
@@ -53,8 +55,8 @@ class Home extends Component {
 
           <div className="App-right">
             <div className="App-blog">
-                  <BlogList blogList={blogList}/>
-                  {this.props.children}
+                  <BlogList blogList={this.state.blogList}/>
+                  {/* {this.props.children} */}
             </div>   
           </div>       
       </div>
@@ -62,11 +64,22 @@ class Home extends Component {
     }
     
   async componentDidMount(){ 
+    const _this = this;
     const { text, from } = await getWord();
     this.setState({
       menuText: text,
       textFrom: from,
     });
+
+    Axios.get("/api/getBlogList")
+    .then(function(res){
+      debugger
+      console.log(res.data.msg)
+      console.log(res.data.data)
+      _this.setState({
+        blogList:res.data.data
+      })
+    })
   }
     
 }
