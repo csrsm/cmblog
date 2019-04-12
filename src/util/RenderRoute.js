@@ -19,7 +19,7 @@ function RenderRoute(RouterConfig) {
                     redirect,
                     exact,
                     strict,
-                    RouterConfig: childRoutesConfig,
+                    routes: childRoutesConfig,
                     component: Comp,
                 } = route
 
@@ -42,6 +42,7 @@ function RenderRoute(RouterConfig) {
                         exact={exact}
                         strict={strict}
                         render={(props) => {
+                            debugger
                             const childRoutes = RenderRoute(
                                 childRoutesConfig || [],
                                 {},

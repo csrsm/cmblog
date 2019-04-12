@@ -9,6 +9,7 @@ function BlogList (props) {
 
     let blog = props.blogList.map((blogList) => 
     <Card hoverable 
+        key={blogList.id}
           className="card"      
     >
         <div key={blogList.id}>
