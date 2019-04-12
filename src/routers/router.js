@@ -11,7 +11,8 @@ export const RouteConfig = [
             {
                 path: '/home/detail',
                 component: Detail,
-            },  
+            },
+              
         ],
     },
     {
