@@ -1,6 +1,7 @@
 
 import Home from '../component/home.js';
-import Detail from '../component/detail.js'
+import Detail from '../component/detail.js';
+import BlogList from '../component/blogList';
 
 
 export const RouteConfig = [
@@ -12,6 +13,10 @@ export const RouteConfig = [
                 path: '/home/detail',
                 component: Detail,
             },
+            {
+                path: '/home',
+                component: BlogList,
+            }
               
         ],
     },

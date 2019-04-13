@@ -7,7 +7,18 @@ import '../App.css';
 
 function BlogList (props) {
 
-    let blog = props.blogList.map((blogList) => 
+    
+    //博客列表
+    const blogList = [
+        {id: 1, title: '标题1', content: 'Welcome to learning React!',date:'2019-03-27'},
+        {id: 2, title: '标题2', content: 'You can install React from npm.',date:'2019-03-27'},
+        {id: 3, title: '标题3', content: 'You can install React from npm.',date:'2019-03-27'},
+        {id: 4, title: '标题4', content: 'You can install React from npm.',date:'2019-03-27'},
+        {id: 5, title: '标题5', content: 'You can install React from npm.',date:'2019-03-27'}
+    ];
+    // const [blogList, setBlogList] = useState(null);
+
+    let blog = blogList.map((blogList) => 
     <Card hoverable 
         key={blogList.id}
           className="card"      
